@@ -18,14 +18,13 @@ pre { background: #1e1e1e; color: #d4d4d4; padding: 1rem; border-radius: 4px; ov
 <body>
 <div class="card">
 <h2>Painel do Cliente (Frontend)</h2>
-<p>Origem do Cliente: <strong id="origematual">Detectando...</strong></p>
+<p>Origem do Cliente: <strong id="origem-atual">Detectando...</strong></p>
 <button id="btn-requisicao">Executar Requisição</button>
 <h3>Resultado:</h3>
 <pre id="saida">Nenhuma requisição disparada ainda.</pre>
 </div>
 <script>
-document.getElementById('origem-atual').innerText =
-window.location.origin;
+document.getElementById('origem-atual').innerText = window.location.origin;
 // DEFINA A URL DA API:
 // Se estiver em localhost: 'http://localhost:8080/dados'
 // Se estiver no Codespaces: use a URL completa da porta 8080 (ex:'https://xxx-8080.app.github.dev/dados')

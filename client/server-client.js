@@ -7,7 +7,7 @@ http
 const filePath = path.join(__dirname, "index.html");
 fs.readFile(filePath, (err, content) => {
 if (err) {
-res.writeHead(500, { "Content-Type": "text/plain; charset=utf8" });
+res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
 res.end("Erro ao carregar index.html");
 return;
 }
