@@ -34,7 +34,12 @@ document.getElementById('btnrequisicao').addEventListener('click', () => {
 const saida = document.getElementById('saida');
 saida.innerText = 'Disparando requisição...';
 saida.classList.remove('erro');
-fetch(API_URL)
+fetch(API_URL, {
+  method: 'GET',
+  headers: {
+    'X-Identificador-Estudante': '2026108221'
+  }
+})
 .then(res => {
 if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
 return res.json();
