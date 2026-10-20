@@ -11,7 +11,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,0.1); max-width: 600px; }
 button { padding: 10px 16px; background: #0066cc; color: #fff;
 border: none; border-radius: 4px; cursor: pointer; font-size: 14px; }
 button:hover { background: #004c99; }
-pre { background: #1e1e1e; color: #d4d4d4; padding: 1rem; borderradius: 4px; overflow-x: auto; }
+pre { background: #1e1e1e; color: #d4d4d4; padding: 1rem; border-radius: 4px; overflow-x: auto; }
 .erro { color: #d93025; font-weight: bold; }
 </style>
 </head>
@@ -29,7 +29,7 @@ window.location.origin;
 // DEFINA A URL DA API:
 // Se estiver em localhost: 'http://localhost:8080/dados'
 // Se estiver no Codespaces: use a URL completa da porta 8080 (ex:'https://xxx-8080.app.github.dev/dados')
-const API_URL = 'http://localhost:8080/dados';
+const API_URL = 'https://vigilant-space-acorn-pjxq9wq46vrvh6w4v-8080.app.github.dev/dados';
 document.getElementById('btnrequisicao').addEventListener('click', () => {
 const saida = document.getElementById('saida');
 saida.innerText = 'Disparando requisição...';
