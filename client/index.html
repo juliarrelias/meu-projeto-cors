@@ -29,7 +29,7 @@ document.getElementById('origem-atual').innerText = window.location.origin;
 // Se estiver em localhost: 'http://localhost:8080/dados'
 // Se estiver no Codespaces: use a URL completa da porta 8080 (ex:'https://xxx-8080.app.github.dev/dados')
 const API_URL = 'https://vigilant-space-acorn-pjxq9wq46vrvh6w4v-8080.app.github.dev/dados';
-document.getElementById('btnrequisicao').addEventListener('click', () => {
+document.getElementById('btn-requisicao').addEventListener('click', () => {
 const saida = document.getElementById('saida');
 saida.innerText = 'Disparando requisição...';
 saida.classList.remove('erro');
