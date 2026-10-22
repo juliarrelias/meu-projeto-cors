@@ -3,7 +3,7 @@ const PORT = 8080;
 
 // Troque pela origem do seu cliente: http://localhost:3000
 // ou a URL pública do Codespace na porta 3000 (sem barra no final)
-const ORIGEM = "https://vigilant-space-acorn-pjxq9wq46vrvh6w4v-3000.app.github.dev/";
+const ORIGEM = "https://vigilant-space-acorn-pjxq9wq46vrvh6w4v-3000.app.github.dev";
 
 http
   .createServer((req, res) => {
